@@ -2,7 +2,6 @@ const asyncHandler = require('express-async-handler')
 const Users = require('../models/userModel')
 const CryptoJS = require('crypto-js')
 const jwt = require('jsonwebtoken')
-const { generateRefreshAccessToken } = require('../config/refreshToken')
 
 //To Register a User
 userRegister = asyncHandler(async(req,res)=>{
